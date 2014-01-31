@@ -26,6 +26,6 @@ if proxy != False:
 			title = metadata[each]
 		elif each == "mpris:artUrl":
 		    cover = metadata[each]
-	lispeak.displayNotification(title,artist+"\n"+album,image=cover)
+	lispeak.displayNotification(title,"Artist: "+artist+"\\nAlbum: "+album,image=cover)
 else:
 	lispeak.displayNotification("Nothing Playing")
