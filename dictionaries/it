@@ -1,18 +1,20 @@
-[<fai partire la ,ascolta la>]canzone (LINE song)
+[<canzone,fai partire,ascolta,metti>][ <[il ]brano,[la ]canzone>] (LINE song)
   mediaControl "$song$"
 abbassa [il ]volume
   mediaControl volume_down
 alza [il ]volume
   mediaControl volume_up
+<ferma,stop>[ <[il ]brano,[la ]canzone>]
+  mediaControl stop
 <silenzioso, muto>
   mediaControl volume_mute
 pausa
   mediaControl pause
-<play, esegui>[ brano]
+<play, esegui>[ <[il ]brano,[la ]traccia,[la ]canzone,[il ]video>]
   mediaControl play
-<canzone, traccia, file, video> precedente
+[<canzone, brano, traccia, file, video> ]precedente
   mediaControl prev
-<<canzone, traccia> successiva,<file,video> successivo>
+<[<canzone, traccia> ]successiva,[<file,video,brano> ]successivo>
   mediaControl next
 <qual, quale, che>[ è] <il,la> <brano,canzone,traccia> [è questo] <che è> <che viene> suonata [<in questo momento,ora,adesso>] 
   mediaControlAdv
